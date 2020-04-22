@@ -50,6 +50,5 @@ public class LeadProcessorTest
       LeadProcessor obj = new LeadProcessor();
       DataBase.executeBatch(obj);
       Test.stopTest();
-
   }
 
