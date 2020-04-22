@@ -30,10 +30,12 @@ global class UpdateContactAddresses implements Database.Batchable<sObject>, Data
 
 ### Apex Test Class
 @isTest
+
 public class LeadProcessorTest
 {
   static testMethod void testMethod1()
   {
+  
       List<Lead> lstLead = new List<Lead>();
       for(Integer i=0 ;i <200;i++)
       {
