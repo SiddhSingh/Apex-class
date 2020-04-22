@@ -1,7 +1,8 @@
 
 ### Apex Class
 
-global class UpdateContactAddresses implements Database.Batchable<sObject>, Database.Stateful {
+global class UpdateContactAddressesimplements Database.Batchable<sObject>, Database.Stateful {
+    
     global Database.QueryLocator start(Database.BatchableContext bc) {
         return Database.getQueryLocator(
             'SELECT * FROM Lead WHERE Country="US"' 
