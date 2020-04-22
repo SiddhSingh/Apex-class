@@ -1,4 +1,4 @@
-Apex Class
+//Apex Class//
 
 global class UpdateContactAddresses implements Database.Batchable<sObject>, Database.Stateful {
     
@@ -29,7 +29,8 @@ global class UpdateContactAddresses implements Database.Batchable<sObject>, Data
 }
 
 
-@isTest
+//Apex Test Class//
+
 public class LeadProcessorTest
 {
   static testMethod void testMethod1()
