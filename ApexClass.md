@@ -1,5 +1,7 @@
-global class UpdateContactAddresses implements Database.Batchable<sObject>, Database.Stateful {
+Apex Class
 
+global class UpdateContactAddresses implements Database.Batchable<sObject>, Database.Stateful {
+    
     global Database.QueryLocator start(Database.BatchableContext bc) {
         return Database.getQueryLocator(
             'SELECT * FROM Lead WHERE Country="US"' 
@@ -32,6 +34,7 @@ public class LeadProcessorTest
 {
   static testMethod void testMethod1()
   {
+  
       List<Lead> lstLead = new List<Lead>();
       for(Integer i=0 ;i <200;i++)
       {
@@ -46,6 +49,5 @@ public class LeadProcessorTest
       LeadProcessor obj = new LeadProcessor();
       DataBase.executeBatch(obj);
       Test.stopTest();
-
   }
 
