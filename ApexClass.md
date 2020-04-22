@@ -1,6 +1,6 @@
-'''
+
 ### Apex Class
-'''
+
 global class UpdateContactAddresses implements Database.Batchable<sObject>, Database.Stateful {
     
     global Database.QueryLocator start(Database.BatchableContext bc) {
@@ -29,10 +29,10 @@ global class UpdateContactAddresses implements Database.Batchable<sObject>, Data
     global void finish(Database.BatchableContext bc){   }
 }
 
-'''
+
 ### Apex Test Class
-'''
-@isTest
+
+
 public class LeadProcessorTest
 {
   static testMethod void testMethod1()
